@@ -1,0 +1,58 @@
+@import './layout.css';
+@import './components.css';
+
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #3b82f6;
+  --muted: #6b7280;
+  --danger: #ef4444;
+  --radius: 8px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: #111827;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+/* basic form controls fallback */
+input, button, select, textarea {
+  margin: 6px 0;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(59,130,246,0.12);
+}
+
+ul { padding-left: 0; }
+li { list-style: none; }
+

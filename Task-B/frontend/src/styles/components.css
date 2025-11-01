@@ -1,0 +1,78 @@
+/* components.css - small component styles */
+
+h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+}
+
+.file-list {
+  margin-top: 12px;
+}
+
+/* center content for auth pages (login/register) */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 48px);
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="text"],
+.card textarea, .card select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.01), rgba(0,0,0,0.01));
+  border: 1px solid #f3f4f6;
+  margin-bottom: 8px;
+}
+
+.file-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filename {
+  font-weight: 600;
+}
+
+.file-actions button {
+  margin-left: 8px;
+}
+
+.progress {
+  height: 8px;
+  background: #eef2ff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress > i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.error {
+  color: var(--danger);
+}
